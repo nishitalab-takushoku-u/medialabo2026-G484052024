@@ -1,0 +1,17 @@
+#thead {
+    color: cornflowerblue;
+}
+
+table {
+    border: 5px solid cornflowerblue;
+}
+
+tr {
+    /* border: 2px solid saddlebrown;
+     */
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
