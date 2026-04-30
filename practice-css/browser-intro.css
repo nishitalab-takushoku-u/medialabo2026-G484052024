@@ -4,24 +4,47 @@ p {
 
 p.info {
 	font-size: 10pt;
+	background-color: rgb(100, 100, 100);
+	/* opacity: 20%; */
 }
 
 h1 {
-	background-color: #7f7fcf;
+	color: white;
+	text-shadow: 2px 3px 3px purple;
 }
 
 h2 {
-	border: solid 1px black;
+	color: navy;
+	background: linear-gradient(to right, white, #ffefaf);
+	/* background-color: white; */
+	/* opacity: 30%; */
+	/* border: solid 1px black; */
 	margin: 5px;
 }
 
 div#zentai {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* justify-content: start; */
 	flex-direction: row;
-	width: 1024px;
+	width: auto;
+	margin: 10px;
+	padding: 10px;
+	justify-content: center;
+	gap: 10px;
 }
 
-div#zentai > div {
+div#zentai>div {
+	/* display: grid; */
 	margin-left: 5px;
 	background-color: #ffefaf;
+	/* padding: 10px; */
+	/* width: 800px; */
+
+}
+
+#mozila {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 }
