@@ -1,21 +1,37 @@
 body {
     background-image: url(welcome.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    /* background-attachment: fixed; */
+    background-position: right top;
+    /* background-size: px; */
     /* align-items: center; */
     /* opacity: 20%; */
 }
 
 #heading {
-    text-shadow: 2px 3px 3px rebeccapurple;
-    text-align: center;
-    font-size: 50px;
+    text-shadow: 2px 3px 3px gray;
+    text-align: left;
+    font-size: 30px;
+}
+
+.btn {
+    padding: 10px 15px;
+    /* margin: 5px; */
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .title {
     display: grid;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 15px;
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
