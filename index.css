@@ -1,8 +1,12 @@
 body {
-    background-image: url(welcome.jpg);
+    margin: auto;
+}
+
+main {
+    background-image: url(bg.jpg);
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-position: right top;
+    /* background-position: ; */
     /* background-size: px; */
     /* align-items: center; */
     /* opacity: 20%; */
@@ -32,8 +36,8 @@ body {
 .title {
     display: grid;
     justify-content: space-evenly;
-    gap: 15px;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .box {
@@ -46,14 +50,14 @@ body {
     /* background-color: honeydew; */
 }
 
-.box:hover {
+/* .box:hover {
     background-color: aquamarine;
     /* opacity: 40%; */
-    /* color: aqua; */
-    font-size: 20px;
-}
+/* color: aqua; */
+/* font-size: 20px;
+} */
 
-h2 {
+*/ h2 {
     font-size: 30px;
     text-shadow: 3px 3px 3px gray;
     /* text-align: justify; */
@@ -62,4 +66,8 @@ h2 {
 #heading2 {
     text-align: center;
     /* align-items: center; */
+}
+
+img {
+    size: 200px;
 }
