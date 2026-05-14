@@ -10,7 +10,7 @@ p.info {
 
 h1 {
 	color: white;
-	text-shadow: 2px 3px 3px purple;
+	text-shadow: 3px 3px 3px navy;
 }
 
 h2 {
@@ -25,6 +25,7 @@ h2 {
 div#zentai {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	/* height: 200px; */
 	/* justify-content: start; */
 	flex-direction: row;
 	width: auto;
@@ -36,6 +37,7 @@ div#zentai {
 
 div#zentai>div {
 	/* display: grid; */
+	height: 200px;
 	margin-left: 5px;
 	background-color: #ffefaf;
 	/* padding: 10px; */
