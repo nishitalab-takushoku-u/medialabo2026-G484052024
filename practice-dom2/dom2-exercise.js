@@ -8,11 +8,29 @@ let campus = {
 };
 
 let gakka = [
-	{name: "機械システム工学科", ename: "Department of Mechanical Systems Engineering"},
-	{name: "電子システム工学科", ename: "Department of Electronics and Computer Systems"},
-	{name: "情報工学科", ename: "Department of Computer Science"},
-	{name: "デザイン学科", ename: "Department of Design"}
+	{ name: "機械システム工学科", ename: "Department of Mechanical Systems Engineering" },
+	{ name: "電子システム工学科", ename: "Department of Electronics and Computer Systems" },
+	{ name: "情報工学科", ename: "Department of Computer Science" },
+	{ name: "デザイン学科", ename: "Department of Design" }
 ];
 
 //////////////// ここから下にプログラムを書きたそう!
 
+function changeAll() {
+	let p = document.createElement('p');
+	p.textContent = campus.address;
+	let h = document.querySelector('h2#addr');
+	h.insertAdjacentElement('afterend', p);
+
+	for (i = 0; i < gakka.length; i++) {
+		let h = document.querySelector('h2#dept');
+		let u = document.createElement('ul');
+		let l = document.createElement('li');
+		l.textContent = gakka[i].name;
+		u.insertAdjacentElement('beforeend', l);
+		h.insertAdjacentElement('afterend', u);
+	}
+
+}
+let b = document.querySelector('button#show');
+b.addEventListener('click', changeAll);

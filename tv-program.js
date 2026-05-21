@@ -19,9 +19,37 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let programs = data.list.g1;
+  for (let p of programs) {
+    let tbody = document.querySelector('tbody#tbody');
+    let r = document.createElement('tr');
+    let start_time = document.createElement('td');
+    start_time.textContent = p.start_time;
+    r.insertAdjacentElement('beforeend', start_time);
+    let end_time = document.createElement('td');
+    end_time.textContent = p.end_time;
+    r.insertAdjacentElement('beforeend', end_time);
+    let title = document.createElement('td');
+    title.textContent = p.title;
+    r.insertAdjacentElement('beforeend', title);
+    let subtitle = document.createElement('td');
+    subtitle.textContent = p.subtitle;
+    r.insertAdjacentElement('beforeend', subtitle);
+    let content = document.createElement('td');
+    content.textContent = p.content;
+    r.insertAdjacentElement('beforeend', content);
+    let act = document.createElement('td');
+    act.textContent = p.act;
+    r.insertAdjacentElement('beforeend', act);
+    tbody.insertAdjacentElement('beforeend', r);
+  }
+
 
 }
-
+let b = document.querySelector('button#btn');
+b.addEventListener('click', () => {
+  printDom(data);
+});
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
 
