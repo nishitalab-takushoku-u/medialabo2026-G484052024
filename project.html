@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="project.css">
-    <script src="tv-program.js" defer></script>
+    <!-- <script src="tv-program.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="practice-ajax/ajax-demo.js" defer></script>
 </head>
 
 <body>
@@ -19,42 +21,34 @@
         </caption>
 
         <tbody id="tbody">
-            <!-- <tr>
-                <td>2022年03月04日 <br>04:35:00</td>
-                <td>2022年03月04日 <br>04:35:00</td>
-                <td>みんなのうた「ごっ
-                    つおさま」／「超変身！ミネラルフォーマーズ」</td>
-                <td>「ごっつおさま」うた：須貝智郎／「超
-                    変身！ミネラルフォーマーズ」うた：鬼
-                    龍院翔fr omゴールデンボンバー</td>
-                <td>
-                    「ごっつぉさま」うた：須貝智郎／「超変身！ミネラルフォーマーズ」うた：鬼龍院翔from
-                    ゴールデンボンバー</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2022年03月04日 <br>23:05:00</td>
-                <td>2022年03月04日 <br>23:10:00</td>
-                <td>「パラスポーツxアニメ
-                    「アニxパラ」♥パラ
-                    アルペンスキーテー
-                    マ曲江口寿史xACC</td>
-                <td>パラスポーツの魅力をアニメで伝える番パ組。高速滑走に挑む精神力が試されるパアラアルペンスキーを描く。キャラ原案：メ江口寿史/曲：Awesome City Club
-                </td>
-                <td>パラスポーツの魅力をアニメで伝えるプロジェクトの第13弾。圧倒的なスピードに挑む「パラアルペンスキー」の世界を江口寿史原案の魅力的なキャラクターで描く。平昌パラリンピック金メダリストの村岡桃佳選手への取材から生まれた主人公・桃は、スピードへの恐怖を克服していく。その壁を越えた先にあるものとは…・・テーマ曲♪「On
-                    Your Mark lAwesome City
-                    Clubが手掛けた。
-                </td>
-                <td>声】松本まりか，【出演】Awesome City Club，【監督】西村一彦，【脚本】加納新太，【原案】江口寿史</td>
-            </tr> -->
+
         </tbody>
     </table>
-    <button id="btn">Show news</button>
+
+    <div>
+        <h1>番組表の検索結果</h1>
+        <label for="チャンネル">チャンネル</label>
+        <select name="チャンネル" id="ch">
+            <option value="g1">NHK総合1</option>
+            <option value="e1">Eテレ1</option>
+        </select>
+        <label for="ジャンル">ジャンル</label>
+        <select name="ジャンル" id="gn">
+            <option value="0000">ニュース・報道</option>
+            <option value="0100">スポーツ</option>
+            <option value="0205">情報・ワイドショー</option>
+            <option value="0300">ドラマ</option>
+            <option value="0409">音楽</option>
+            <option value="0502">バラエティ</option>
+            <option value="0600">映画</option>
+            <option value="0700">アニメ</option>
+            <option value="0800">ドキュメンタリー・教養</option>
+            <option value="0903">劇場・公演</option>
+            <option value="1000">趣味・教育</option>
+            <option value="1100">福祉</option>
+        </select>
+        <button id="sendRequest">検索</button>
+    </div>
 </body>
-<section>
-    <!-- <div>
-        <h1>Food & Travel</h1>
-    </div> -->
-</section>
 
 </html>

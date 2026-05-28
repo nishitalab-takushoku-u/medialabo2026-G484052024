@@ -26,3 +26,27 @@ td {
 #btn:hover {
     font-size: 20px;
 }
+
+
+
+#sendRequest {
+    padding: 10px;
+    background-color: lightgreen;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#gn {
+    padding: 10px;
+    background-color: lightyellow;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+#ch {
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    font-size: 15px;
+    border-radius: 5px;
+}
