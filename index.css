@@ -57,9 +57,9 @@ main {
 /* font-size: 20px;
 } */
 
-*/ h2 {
+h2 {
     font-size: 30px;
-    text-shadow: 3px 3px 3px gray;
+    text-shadow: gray 3px 3px 3px;
     /* text-align: justify; */
 }
 
@@ -70,4 +70,11 @@ main {
 
 img {
     size: 200px;
+}
+
+a {
+    color: hotpink;
+    /* background-color: yellow; */
+    font-weight: bold;
+    font-size: large;
 }
