@@ -21,55 +21,82 @@
     </header>
     <main>
         <div class="title">
-            <div class="box">
-                <img src="welcome.jpg" alt="" width="200px" height="100px">
-                <h2>本テーマについて</h2>
-                <p>Webコンテンツ作成の基本を理解し、HTMLやCSSで情報を分かりやすく整理して表現できる力を身につける。また、利用者の立場で見やすく伝わりやすい内容を作れるようになることを目標とする。</p>
-            </div>
-            <div class="box">
+            <!-- <img src="welcome.jpg" alt="" width="200px" height="100px"> -->
+            <h2>本テーマについて</h2>
+            <p>Webコンテンツ作成の基本を理解し、HTMLやCSSで情報を分かりやすく整理して表現できる力を身につける。また、利用者の立場で見やすく伝わりやすい内容を作れるようになることを目標とする。</p>
+        </div>
+
+        <div class="box">
+            <div class="bakso">
+                <img src="nhk.png" alt="" width="500px" height="200px">
                 <h2>プロジェクト課題について</h2>
-                <p>ここには皆さんが取り組んだプロジェクト課題について書きましょう.）（200文字以上）</p>
+                <p>今回のプロジェクトでは、HTMLとJavaScriptを用いてNHKのニュース情報を表示するWebページを作成した。JavaScriptではAxiosライブラリを利用し、指定されたURLからニュースデータを取得した。利用者がチャンネルとジャンルを選択すると、その条件に合ったニュースのタイトルや内容、配信日時を表示できるようにした。実際に外部のデータを取得して画面に表示する仕組みを学ぶことができ、Webアプリケーションの基本的な動作について理解を深めることができた。
+                </p>
                 <p>プロジェクト課題で作成したページ： <u> <a href="project.html">project.html</u></a>
             </div>
-            <div class="box">
-                <img src="hit&blow.png" alt="" width="200px" height="200px">
+            <div class="bakso">
+                <img src="game.png" alt="" width="500px" height="200px">
                 <h2>数当てゲーム</h2>
-                <p>（このテーマの第3回から数当てゲームを作りますので、そのあとにゲームの概要を説明してください。）（200文字以上）</p>
+                <p>この課題では、JavaScriptを使って数当てゲームを作成した。プログラムが1から10までのランダムな数字を生成し、プレイヤーはその数字を予想する。挑戦できる回数は3回までで、予想した数字が正解より大きい場合や小さい場合にはヒントが表示されるようにした。これにより、プレイヤーはヒントを参考にしながら正解を目指すことができる。また、3回以内に正解できなかった場合は、正解の数字と「ゲームオーバー」を表示するようにした。
+                </p>
                 <p>数当てゲームのページ：<a href="kazuate.html">数当てゲーム</a></p>
             </div>
         </div>
     </main>
 
+    <section>
+        <h2 id="heading2">各授業回の学習事項</h2>
+        <div>
+            <div class="section" id="blue">
+                <h2>第1回 :WWW と HTML</h2>
+                <p>WWW（World Wide
+                    Web）の仕組みや役割について学び、インターネット上で情報がどのように提供・閲覧されるかを理解した。また、HTMLの基本構造やタグの役割を学び、見出しや段落、リンクなどを用いてWebページを作成する方法の基礎を理解した。
+                </p>
+                <p>演習の成果：<a href="practice-html/elements.html"><u>演習1ｰ4：HTMLのさまざまな要素</u></a></p>
+            </div>
 
+            <div class="section" id="pink">
+                <h2>第2回 :CSSによるWeb ページの装飾</h2>
+                <p>今回CSSを学んで、Webページの見た目を整える重要性が分かった。色や配置、サイズを変えることで、見やすさや使いやすさが大きく変わることを理解した。特にFlexboxやGridを使うことで、要素をきれいに配置できる点が印象に残った。今後はより分かりやすいデザインを作れるようにしたい。
+                </p>
+                <a href="practice-css/browser-intro.html">CSSで学んだ課題</a>
+            </div>
 
-    <h2 id="heading2">各授業回の学習事項</h2>
-    <h2>第1回 :WWW と HTML</h2>
-    <p>WWW（World Wide
-        Web）の仕組みや役割について学び、インターネット上で情報がどのように提供・閲覧されるかを理解した。また、HTMLの基本構造やタグの役割を学び、見出しや段落、リンクなどを用いてWebページを作成する方法の基礎を理解した。
-    </p>
-    <p>演習の成果：<a href="practice-html/elements.html"><u>演習1ｰ4：HTMLのさまざまな要素</u></a>
-    </p>
-    <h2>第2回 :CSSによるWeb ページの装飾</h2>
-    <a href="practice-css/browser-intro.html">CSSで学んだ課題</a>
-    <p>今回CSSを学んで、Webページの見た目を整える重要性が分かった。色や配置、サイズを変えることで、見やすさや使いやすさが大きく変わることを理解した。特にFlexboxやGridを使うことで、要素をきれいに配置できる点が印象に残った。今後はより分かりやすいデザインを作れるようにしたい。
-    </p>
+            <div class="section" id="green">
+                <h2>第3回 :JavaScriptの基本</h2>
+                <p>
+                    第3回ではJavaScriptの基本について学習した。変数宣言や条件分岐，
+                    繰り返し処理，配列，オブジェクト，関数などの基本文法を学び，
+                    簡単なプログラムを作成できるようになった。
+                </p>
+                <h3>演習の成果</h3>
 
-    <h2>第3回 :JavaScriptの基本</h2>
-    <p>
-        第3回ではJavaScriptの基本について学習した。変数宣言や条件分岐，
-        繰り返し処理，配列，オブジェクト，関数などの基本文法を学び，
-        簡単なプログラムを作成できるようになった。
-    </p>
-    <h3>演習の成果</h3>
+                <a href="practice-js/obj-practice.html">
+                    演習3-6 オブジェクト練習
+                </a>
+            </div>
 
-    <a href="practice-js/obj-practice.html">
-        演習3-6 オブジェクト練習
-    </a>
-    <h2>第4回 :DOM と JavaScript</h2>
-    <a href="practice-eventdom/tashizan.html">演習4-10</a>
-    <h2>第5回 :イベント処理</h2>
-    <a href="practice-dom2/dom2-exercise.html">演習５-7</a>
+            <div class="section" id="red">
+                <h2>第4回 :DOM と JavaScript</h2>
+                <p>第4回では、JavaScriptとDOMについて学んだ。最初はDOMが何なのかよく分からなかったが、学習を進める中で、JavaScriptとHTMLをつなぐための仕組みだと理解できた。実際にdocument.querySelector()やgetElementById()を使ってHTMLの要素を取得し、その内容を変更することができた。また、JavaScriptを使うことで、ボタンを押したときに文字を表示したり、ページの内容を変えたりできることが分かった。これまで見ているだけだったWebページに動きを付けられることが面白いと感じた。
+                </p>
+                <a href="practice-eventdom/tashizan.html">演習4-10</a>
+            </div>
 
+            <div class="section" id="yellow">
+                <h2>第5回 :イベント処理</h2>
+                <p>第5回では、イベントリスナーについて学んだ。私は、ボタンを押したときにページの内容が変わったり、何かが表示されたりする現象をイベントだと理解した。JavaScriptではイベントリスナーを使って、クリックなどのイベントが発生したときに関数を呼び出して実行できることを学んだ。また、JavaScriptはquerySelector()、getElementById()、addEventListener()などのDOMの機能を使ってHTMLの要素にアクセスし、イベントが発生したときにページの内容を変更できることも分かった。特に面白いと感じたのは、ボタンを1回クリックするだけで、JavaScriptとDOMによってHTMLの内容を変更できる点である。簡単な操作でもページの見た目や表示内容を変えられることが印象に残った。
+                </p>
+                <a href="practice-dom2/dom2-exercise.html">演習５-7</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h3>アハメドタスニム <br>工学部 <br>情報工学科</h3>
+            <h3>G484052024</h3>
+        </div>
+    </footer>
 </body>
 
 
